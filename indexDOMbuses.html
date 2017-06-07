@@ -1,0 +1,72 @@
+<html>
+
+    <head>
+        <title>JS test</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            .bus {
+                width: 100px;
+                height: 40px;
+                background-color: #97de36;
+                color: white;
+                font-family: Ariel;
+                margin: 20px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s;
+                cursor: pointer
+            }
+
+            .bus:hover {
+                background-color: forestgreen;
+            }
+
+            .container {
+                display: flex;
+                width: 100%;
+            }
+
+            .left, .right {
+                width: 50%;
+                text-align: center;
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">DOM Buses Test</h1>
+        <div class="container">
+            <div class="left">
+                <div class="bus">Awapuni</div>
+                <div class="bus">Highbury</div>
+                <div class="bus">Cloverlea</div>
+                <div class="bus">Rhodes</div>
+            </div>
+            <div class="right">
+                <!--Bus content goes here-->
+                <h1 id="busTitle">Title</h1>
+                <h2 id="busStops">Stops</h2>
+                <h2 id="busTimes">Times</h2>
+            </div>
+        </div>
+
+    <script src="DOMbuses.js"></script>
+
+
+
+
+        <script>
+        //start JQUERY
+            $(document).ready(function() {
+
+                $(".left").fadeToggle(1000).fadeToggle(1000)
+
+            });
+
+        </script>
+
+    </body>
+</html>
